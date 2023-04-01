@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+<html>
+    <style>
+        .cl-primary{
+        background-color: #00695c;
+        }
+
+        .centered{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            
+        }
+       
+        h1.loader-text{
+        text-align: center;
+        color: white;
+        font-family: 'Jost', sans-serif;
+        text-shadow: 0px 0px 20px rgb(80,80,80);
+
+        }
+
+        div.first-circle{
+        width: 10px;
+        height: 10px;
+        border-radius:5px;
+        background-color: white;
+        text-align: center;
+        margin-left: -150px;
+        box-shadow: 0px 0px 20px rgb(80,80,80);
+
+        }
+       
+        div.second-circle{
+        width: 10px;
+        height: 10px;
+        border-radius:5px;
+        background-color: white;
+        text-align: center;
+        margin-left: 150px;
+        box-shadow: 0px 0px 20px rgb(80,80,80);
+        }
+        
+        @keyframes spin{
+        from{transform: rotateZ(0deg);} 
+        to{transform: rotateZ(360deg);}
+        }
+
+        .rotator{
+        animation: spin .5s infinite;
+        animation-timing-function: linear;
+        }
+
+    </style>
+    <a href="indexblog.html">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+    </head> 
+    <body>
+        <title>Per caricare: schiaccia!!</title>
+        <link rel="shortcut icon" type="x-icon" href="logo sito1.png">
+        <body class="cl-primary">
+        <div class="centered">
+        <h1 class="loader-text" title="Per caricare schiaccia">Schiaccia...</h1> 
+        </div>
+        <div class="centered rotator">
+        <div class="first-circle centered"></div>
+        <div class="second-circle centered"></div> 
+        </div>
+    </body>
+    </a>
+</html>
